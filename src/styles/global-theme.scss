@@ -1,0 +1,83 @@
+//normalize.css for reseting default browser styles
+@import '~normalize.css/normalize';
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+//Set fonts
+$font-primary: 'Verdana', sans-serif;
+$font-headings: 'Josefin Sans', sans-serif;
+
+//Set colors
+//$primary-color: ???;
+$accent-color: #E37410;
+$white-color: #FFF;
+$bg-beige-color: #FFFBF6;
+$text-color: #75736A;
+
+//Global styles
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $bg-beige-color;
+    color: $text-color;
+    font-family: $font-primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-headings;
+}
+a {
+    text-decoration: none;
+    color: $accent-color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+button {
+    cursor: pointer;
+    background-color: $accent-color;
+    color: $white-color;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: darken($accent-color, 10%);
+    }
+}
+
+input, textarea, select {
+    font-family: inherit;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.full-width-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 88px 0;
+}
+
+////Hide focus outline on elements that are not focused by keyboard
+//.focus-visible-only {
+//    &:focus:not(:focus-visible) {
+//        outline: none;
+//    }
+//}
+
+
